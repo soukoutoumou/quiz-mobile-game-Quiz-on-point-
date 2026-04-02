@@ -97,3 +97,13 @@ The game is built on a set of reusable core systems that support all gameplay mo
 
 - **Persistent Data System**  
   Handles saving and loading of player progress, including achievements and best performances.
+
+  ## Code Architecture
+
+The project is structured around a combination of mode-specific scripts and shared systems.
+
+Each game mode is implemented through its own quiz scene and corresponding script, responsible for handling question flow, timing, scoring, and mode-specific mechanics.
+
+Shared functionality is managed through reusable systems. A central `SaveManager.gd` handles saving and loading of game data, providing default values and general-purpose functions used across all modes. This allows each mode to maintain its own progress and best performance while relying on a common persistence layer.
+
+This structure enables separation between core gameplay logic and global systems, making it easier to extend or modify individual modes without affecting the overall architecture.
