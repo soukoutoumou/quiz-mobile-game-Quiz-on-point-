@@ -98,7 +98,7 @@ The game is built on a set of reusable core systems that support all gameplay mo
 - **Persistent Data System**  
   Handles saving and loading of player progress, including achievements and best performances.
 
-  ## Code Architecture
+## Code Architecture
 
 The project is structured around a combination of mode-specific scripts and shared systems.
 
